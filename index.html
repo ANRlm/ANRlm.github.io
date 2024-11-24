@@ -374,6 +374,176 @@
 
 
   
+    <article id="post-KeyMap 13eea72abf7980e39be9f78e7af51947" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/11/24/KeyMap%2013eea72abf7980e39be9f78e7af51947/" class="article-date">
+  <time class="dt-published" datetime="2024-11-24T07:45:34.000Z" itemprop="datePublished">2024-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/11/24/KeyMap%2013eea72abf7980e39be9f78e7af51947/">KeyMap</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h1><h3 id="Vim-插入键位置和移动光标键说明"><a href="#Vim-插入键位置和移动光标键说明" class="headerlink" title="Vim 插入键位置和移动光标键说明"></a>Vim 插入键位置和移动光标键说明</h3><table>
+<thead>
+<tr>
+<th>O</th>
+<th>上一行首</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>o</td>
+<td>下一行首</td>
+</tr>
+<tr>
+<td>I</td>
+<td>当前行首</td>
+</tr>
+<tr>
+<td>i</td>
+<td>光标前</td>
+</tr>
+<tr>
+<td>A</td>
+<td>当前行尾</td>
+</tr>
+<tr>
+<td>a</td>
+<td>光标后</td>
+</tr>
+<tr>
+<td>^</td>
+<td>当前行首</td>
+</tr>
+<tr>
+<td>$</td>
+<td>当前行尾</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>复制内容</td>
+</tr>
+<tr>
+<td>p</td>
+<td>粘贴内容</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>删除内容</td>
+</tr>
+<tr>
+<td>G</td>
+<td>最后一行</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>第一行</td>
+</tr>
+<tr>
+<td>数字+G</td>
+<td>跳转对应行</td>
+</tr>
+<tr>
+<td>u</td>
+<td>撤销</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>ctrl+f</th>
+<th>(forward)</th>
+<th>向前翻页</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ctrl+b</td>
+<td>(backward)</td>
+<td>向后翻页</td>
+</tr>
+<tr>
+<td>ctrl+u</td>
+<td>(up)</td>
+<td>向上翻半页</td>
+</tr>
+<tr>
+<td>ctrl+d</td>
+<td>(down)</td>
+<td>向下翻半页</td>
+</tr>
+</tbody></table>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><table>
+<thead>
+<tr>
+<th>&#x2F;</th>
+<th>向下查找</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>？</td>
+<td>向上查找</td>
+</tr>
+<tr>
+<td>n</td>
+<td>(next)下一结果</td>
+</tr>
+<tr>
+<td>N</td>
+<td>上一结果</td>
+</tr>
+<tr>
+<td>\c</td>
+<td>不区分大小写</td>
+</tr>
+</tbody></table>
+<h3 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h3><p>在vim尾行模式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">n1,n2s/old/new/g</span><br></pre></td></tr></table></figure>
+
+<p>(如替换当前行则省略n1,n2)(&#x2F;g为全局变量，如不加则进仅替换每一行第一个匹配到的内容)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1 hello world hello vim</span><br><span class="line">2 hello world hello vim</span><br><span class="line">3 hello world hello vim</span><br><span class="line"><span class="comment"># 若输入 :1,2s/hello/bye/g</span></span><br><span class="line"><span class="comment"># 结果如下</span></span><br><span class="line">1 <span class="built_in">bye</span> world <span class="built_in">bye</span> vim</span><br><span class="line">2 <span class="built_in">bye</span> world <span class="built_in">bye</span> vim</span><br><span class="line">3 hello world hello vim</span><br><span class="line"><span class="comment"># 若输入 :1,3s/hello/bye</span></span><br><span class="line"><span class="comment"># 结果如下</span></span><br><span class="line">1 <span class="built_in">bye</span> world hello vim</span><br><span class="line">2 <span class="built_in">bye</span> world hello vim</span><br><span class="line">3 <span class="built_in">bye</span> world hello vim</span><br><span class="line"><span class="comment"># :1,3s 等同于 :1,$s</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="joshto"><a href="#joshto" class="headerlink" title="joshto"></a>joshto</h2><p>cw &#x3D; change word 重命名</p>
+<p>yy 复制</p>
+<p>pp 粘贴</p>
+<p>zh 显示&#x2F;隐藏文件</p>
+<h1 id="aerospace"><a href="#aerospace" class="headerlink" title="aerospace"></a>aerospace</h1><p>option + shift + ; 服务模式</p>
+<p>option + &#x2F; 水平和垂直排列切换</p>
+<p>option + , 手风琴排列模式(按下option+&#x2F;返回平铺模式)</p>
+<h1 id="fzf"><a href="#fzf" class="headerlink" title="fzf"></a>fzf</h1><p>control+t 开启 fzf</p>
+<p>\ + tab 开启 fzf; 再次按下 tab 进行多选, shift+tab 取消勾选</p>
+<p>control + r 命令历史记录</p>
+<h1 id="bat-better-cat"><a href="#bat-better-cat" class="headerlink" title="bat(better cat)"></a>bat(better cat)</h1><p>bat + 文件路径 预览文件内容</p>
+<h1 id="tldr-better-man"><a href="#tldr-better-man" class="headerlink" title="tldr(better man)"></a>tldr(better man)</h1><p>tlrc + 命令 命令用户手册</p>
+<h1 id="zoxide"><a href="#zoxide" class="headerlink" title="zoxide"></a>zoxide</h1><p>z + 文件夹名称 打开对应文件夹(无需输入完整路径)</p>
+<p>z + 空格 + tab 给出当前路径下所有选项</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/11/24/KeyMap%2013eea72abf7980e39be9f78e7af51947/" data-id="cm3vruycs00007gqdczb4c357" data-title="KeyMap" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-C" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/11/24/C/" class="article-date">
@@ -489,6 +659,10 @@
         
           <li>
             <a href="/2024/11/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/24/KeyMap%2013eea72abf7980e39be9f78e7af51947/">KeyMap</a>
           </li>
         
           <li>
