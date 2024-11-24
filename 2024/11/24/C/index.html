@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Ying`s Blog</title>
+  <title>Linux | Ying`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Ying&#96;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="const (常量)12const double PI &#x3D; 3.14&#x2F;&#x2F; 在之后的程序中不允许修改  define (宏定义)1# define PI 3.14  位运算符| &amp;   | 按位与   || — | ——– | —— ||     |          | 按位或 || ^   | 按位异或 || ~   | 按位取反 || &lt;&lt;  | 左移     || &amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="http://example.com/2024/11/24/C/index.html">
 <meta property="og:site_name" content="Ying&#96;s Blog">
+<meta property="og:description" content="const (常量)12const double PI &#x3D; 3.14&#x2F;&#x2F; 在之后的程序中不允许修改  define (宏定义)1# define PI 3.14  位运算符| &amp;   | 按位与   || — | ——– | —— ||     |          | 按位或 || ^   | 按位异或 || ~   | 按位取反 || &lt;&lt;  | 左移     || &amp;gt">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-24T15:43:18.000Z">
+<meta property="article:modified_time" content="2024-11-24T15:43:43.212Z">
 <meta property="article:author" content="ANRlm">
 <meta name="twitter:card" content="summary">
   
@@ -67,9 +71,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-C" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-C" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/11/24/C/" class="article-date">
   <time class="dt-published" datetime="2024-11-24T15:43:18.000Z" itemprop="datePublished">2024-11-24</time>
@@ -82,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/11/24/C/">Linux</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Linux
     </h1>
   
 
@@ -143,316 +145,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Linux" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/11/24/Linux/" class="article-date">
-  <time class="dt-published" datetime="2024-11-24T15:38:18.000Z" itemprop="datePublished">2024-11-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/11/24/Linux/">Linux</a>
-    </h1>
+    <a href="/2024/11/24/Linux/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Linux</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h2><table>
-<thead>
-<tr>
-<th>-a</th>
-<th>显示全部文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-l</td>
-<td>以列显示</td>
-</tr>
-<tr>
-<td>-h</td>
-<td>显示文件大小单位 要和 -l 一起使用</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>按修改时间排序</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>逆序显示</td>
-</tr>
-</tbody></table>
-<h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h2><table>
-<thead>
-<tr>
-<th>.</th>
-<th>当前目录</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>..</td>
-<td>上一级目录</td>
-</tr>
-<tr>
-<td>~</td>
-<td>HOME 目录</td>
-</tr>
-</tbody></table>
-<h2 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h2><p>查看当前工作目录</p>
-<h2 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h2><p>后接路径创建文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> - p test1/test2/test3</span><br><span class="line"><span class="comment"># -p 自动创建不存在的父目录</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h2><p>后接路径创建文件</p>
-<h2 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h2><p>后接路径查看文件内容</p>
-<h2 id="more"><a href="#more" class="headerlink" title="more"></a>more</h2><p>后接路径查看文件内容 支持翻页，如果内容过多，可以翻页展示</p>
-<table>
-<thead>
-<tr>
-<th>space</th>
-<th>翻页</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>q</td>
-<td>退出</td>
-</tr>
-</tbody></table>
-<h2 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> [-r] d1 d2</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>-r</th>
-<th>可选，用于复制文件夹，表示递归</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>d1</td>
-<td>被复制的文件或文件夹路径</td>
-</tr>
-<tr>
-<td>d2</td>
-<td>目的的路径</td>
-</tr>
-</tbody></table>
-<h2 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> d1 d2</span><br></pre></td></tr></table></figure>
-
-<p>d1 表示被移动的文件或文件夹路径</p>
-<table>
-<thead>
-<tr>
-<th>d1</th>
-<th>被移动的路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>d2</td>
-<td>表示目标路径若目标不存在则自动改名</td>
-</tr>
-</tbody></table>
-<h2 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> [-r -f] 参数 1 参数 2 …… 参数n</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>-r</th>
-<th>删除文件夹</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-f</td>
-<td>强制删除</td>
-</tr>
-<tr>
-<td>参数 1 参数 2 …… 参数n</td>
-<td>要删除的文件或文件夹路径 用空格隔开</td>
-</tr>
-</tbody></table>
-<h2 id=""><a href="#" class="headerlink" title="*"></a>*</h2><p>符号*表示通配符，即匹配任意内容(包含空)，用来做模糊匹配</p>
-<p>test* 表示匹配任何以test开头的内容</p>
-<p>*test 表示匹配任何以test结尾的内容</p>
-<p><em>test</em> 表示匹配任何包含test的内容</p>
-<h2 id="which"><a href="#which" class="headerlink" title="which"></a>which</h2><p>查看所使用的一系列命令的程序文件存放在哪里</p>
-<h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find 起始路径 -name “被查找文件名”</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find 起始路径 -size + / -n［kMG］</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>&#x2F; - 大于 小于</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>+</th>
-<th>大于</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>n</td>
-<td>大小数字</td>
-</tr>
-<tr>
-<td>KMG</td>
-<td>大小单位 k(小写字母) 为 kb</td>
-</tr>
-<tr>
-<td>M</td>
-<td>MB</td>
-</tr>
-<tr>
-<td>G</td>
-<td>GB</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查找小于10KB的文件  find / -size -10k</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查找大于100MB的文件  find / -size +100M</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查找大于1GB的文件  find / -size +1G</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h2><p>以下举例：</p>
-<p>rw–rw–r––</p>
-<p>文件所有者权限(user)</p>
-<p>同组用户权限(group)</p>
-<p>其他用户权限(other)</p>
-<p>– 为无权限</p>
-<table>
-<thead>
-<tr>
-<th>r</th>
-<th>可读</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>w</td>
-<td>可写</td>
-</tr>
-<tr>
-<td>x</td>
-<td>可执行</td>
-</tr>
-</tbody></table>
-<h2 id="chmod-change-mode-修改权限"><a href="#chmod-change-mode-修改权限" class="headerlink" title="chmod(change mode)修改权限"></a>chmod(change mode)修改权限</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x filename</span><br><span class="line"><span class="comment"># 添加可执行权限</span></span><br><span class="line"><span class="comment"># 其余类推</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> -x filename</span><br><span class="line"><span class="comment"># 删除可执行权限</span></span><br><span class="line"><span class="comment"># 其余类推</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> ug+x filename</span><br><span class="line"><span class="comment"># 为文件的所有者和所属组添加可执行权限</span></span><br><span class="line"><span class="comment"># 其余类推</span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>r</th>
-<th>w</th>
-<th>x</th>
-<th>r</th>
-<th>w</th>
-<th>x</th>
-<th>r</th>
-<th>w</th>
-<th>x</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>默认权限为 rw–r––r––</p>
-<p>即 4+2 4 4</p>
-<p>即 644</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 644 filename</span><br><span class="line"><span class="comment"># 更改文件权限为644</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello&quot;</span> &gt; hello.txt</span><br><span class="line"><span class="built_in">cat</span> hello.txt</span><br><span class="line"><span class="comment"># 输出 Hello</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/11/24/Linux/" data-id="cm3vrik3700005gqd5e392k2x" data-title="Linux" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/11/24/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-11-24T15:13:16.476Z" itemprop="datePublished">2024-11-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/11/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/11/24/hello-world/" data-id="cm3vqzz4h00000fqdeumfbx1b" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
